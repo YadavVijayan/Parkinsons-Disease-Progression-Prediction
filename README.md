@@ -1,78 +1,56 @@
-Parkinson’s Disease Progression Prediction Using Machine Learning
+Parkinson’s Disease Progression Prediction
 
-Master’s Research Project – MSc Data Analytics, Dublin Business School
+MSc Data Analytics – Dublin Business School
 
-Project Overview
+Overview
 
-This project focuses on predicting Parkinson’s disease progression using voice-based biomedical data and machine learning techniques.
-The goal was to explore how data analytics and predictive models can support healthcare analysis by estimating Motor UPDRS and Total UPDRS scores.
-
-The project follows a complete end-to-end data analytics lifecycle, from data understanding to model evaluation and interpretation.
-
-Objectives
-
-Analyse real-world biomedical voice data related to Parkinson’s disease
-
-Build machine learning regression models to predict disease progression
-
-Compare traditional machine learning and deep learning approaches
-
-Interpret model behaviour using Explainable AI techniques
-
-Demonstrate predictions using a simple Python-based application
+This project implements machine learning regression models to predict Parkinson’s disease progression using voice-based biomedical data. The models estimate Motor UPDRS and Total UPDRS scores based on features extracted from patient voice recordings.
 
 Methodology
 
-The project was carried out using the CRISP-DM framework, including:
-
-Data understanding and exploratory data analysis (EDA)
+CRISP-DM analytics lifecycle
 
 Data cleaning, feature selection, and standardisation
 
-Model development and training
+Exploratory Data Analysis (EDA)
 
-Model evaluation using performance metrics
+Model training and evaluation
 
-Model interpretability and explainability
+Model interpretability using Explainable AI
 
-Models Implemented
+Models
 
 Voting Regressor
 
-Long Short-Term Memory (LSTM)
+LSTM
 
-Gated Recurrent Unit (GRU)
+GRU
 
-Model Evaluation Metrics
+Evaluation Metrics
 
-R² Score
+R²
 
-Root Mean Squared Error (RMSE)
+RMSE
 
-Mean Absolute Error (MAE)
+MAE
 
-The Voting Regressor achieved the best overall performance across prediction tasks.
+The Voting Regressor achieved the best overall performance across both prediction targets.
 
-Explainable AI
+Explainability
 
-To improve transparency and interpretability, SHAP (SHapley Additive exPlanations) was used to analyse feature importance and understand how different variables influenced model predictions.
+SHAP (SHapley Additive Explanations) was used to analyse feature importance and improve model interpretability.
 
-Prototype Application
+Application
 
-A Python Tkinter desktop application was developed to demonstrate real-time prediction of UPDRS scores using the trained model.
-
-Pre-trained model files are stored in the models/ directory and are used directly by the application.
+A Python-based Tkinter desktop application demonstrates real-time prediction using pre-trained models stored in the models/ directory.
 
 Project Structure
-parkinsons-disease-progression-prediction/
-├── notebooks/        # Jupyter notebooks (EDA, modeling, evaluation)
-├── src/              # Python source code
-├── app/              # Tkinter application
-├── models/           # Trained model and scaler (.pkl files)
-├── data/             # Dataset (if included) or data references
-├── images/           # Plots and result visualisations
-├── docs/             # Project report and presentation
-├── README.md
+├── notebooks/    # EDA, modeling, evaluation
+├── src/          # Core Python logic
+├── app/          # Tkinter application
+├── models/       # Trained .pkl files
+├── images/       # Result visualisations
+├── docs/         # Report and presentation
 └── requirements.txt
 
 Dataset
@@ -81,46 +59,15 @@ Parkinson’s Telemonitoring Dataset
 
 Source: UCI Machine Learning Repository
 
-The dataset contains biomedical voice measurements collected from Parkinson’s disease patients.
+Technologies
 
-Technologies Used
+Python, Pandas, NumPy, Scikit-learn, TensorFlow, SHAP, Matplotlib, Tkinter
 
-Python
-
-Pandas, NumPy
-
-Scikit-learn
-
-TensorFlow
-
-SHAP
-
-Matplotlib, Seaborn
-
-Tkinter
-
-How to Run the Application
-
-Clone the repository:
-
-git clone https://github.com/your-username/parkinsons-disease-progression-prediction.git
-
-
-Install required dependencies:
-
+Run Instructions
 pip install -r requirements.txt
-
-
-Run the application:
-
 python app/app.py
 
-Key Learning Outcomes
+Author
 
-Practical experience applying machine learning to healthcare data
-
-Understanding the importance of model interpretability in sensitive domains
-
-Experience working with real-world datasets and evaluation metrics
-
-Improved skills in structuring and presenting analytical projects
+Yadav Vijayan
+MSc Data Analytics, Dublin Business School
