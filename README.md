@@ -1,12 +1,12 @@
-#Parkinson’s Disease Progression Prediction
+# Parkinson’s Disease Progression Prediction
 
-##MSc Data Analytics – Dublin Business School
+## MSc Data Analytics – Dublin Business School
 
-##Overview
+## Overview
 
 This project implements machine learning regression models to predict Parkinson’s disease progression using voice-based biomedical data. The models estimate Motor UPDRS and Total UPDRS scores based on features extracted from patient voice recordings.
 
-##Methodology
+## Methodology
 
 CRISP-DM analytics lifecycle
 
@@ -18,7 +18,7 @@ Model training and evaluation
 
 Model interpretability using Explainable AI
 
-##Models
+## Models
 
 Voting Regressor
 
@@ -26,7 +26,7 @@ LSTM
 
 GRU
 
-##Evaluation Metrics
+## Evaluation Metrics
 
 R²
 
@@ -36,15 +36,15 @@ MAE
 
 The Voting Regressor achieved the best overall performance across both prediction targets.
 
-##Explainability
+## Explainability
 
 SHAP (SHapley Additive Explanations) was used to analyse feature importance and improve model interpretability.
 
-##Application
+## Application
 
 A Python-based Tkinter desktop application demonstrates real-time prediction using pre-trained models stored in the models/ directory.
 
-##Project Structure
+## Project Structure
 ├── notebooks/    # EDA, modeling, evaluation
 ├── src/          # Core Python logic
 ├── app/          # Tkinter application
@@ -53,21 +53,16 @@ A Python-based Tkinter desktop application demonstrates real-time prediction usi
 ├── docs/         # Report and presentation
 └── requirements.txt
 
-##Dataset
+## Dataset
 
 Parkinson’s Telemonitoring Dataset
 
 Source: UCI Machine Learning Repository
 
-##Technologies
+## Technologies
 
 Python, Pandas, NumPy, Scikit-learn, TensorFlow, SHAP, Matplotlib, Tkinter
 
 Run Instructions
 pip install -r requirements.txt
 python app/app.py
-
-Author
-
-Yadav Vijayan
-MSc Data Analytics, Dublin Business School
