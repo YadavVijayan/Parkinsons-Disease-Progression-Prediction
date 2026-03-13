@@ -45,17 +45,17 @@ SHAP (SHapley Additive Explanations) was used to analyse feature importance and 
 A Python-based Tkinter desktop application demonstrates real-time prediction using pre-trained models stored in the models/ directory.
 
 ## Project Structure
-notebooks -    # EDA, modeling, evaluation
+notebooks -     EDA, modeling, evaluation
 
-src -          # Core Python logic
+src -           Core Python logic
 
-app -          # Tkinter application
+app -           Tkinter application
 
-models -       # Trained .pkl files
+models -        Trained .pkl files
 
-images -       # Result visualisations
+images -        Result visualisations
 
-docs -         # Report and presentation
+docs -          Report and presentation
 
 requirements.txt
 
